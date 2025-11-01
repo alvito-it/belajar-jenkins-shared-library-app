@@ -34,7 +34,7 @@ pipeline {
         stage("Parameter") {
             steps {
                 script {
-                    sh(maven("clean compile"))
+                    maven(["clean", "compile", "test"])
                 }
             }
         }
