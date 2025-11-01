@@ -46,7 +46,7 @@ pipeline {
                         name: "Muhammad Alvito Madisyahputra",
                         age: 22,
                         country: "Indonesia"
-                    ])
+                    ]))
                 }
             }
         }
