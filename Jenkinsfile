@@ -50,5 +50,14 @@ pipeline {
                 }
             }
         }
+
+        stage("Library Resource") {
+            steps {
+                script {
+                    def data = libraryResource("data/person.json")
+                    echo(data)
+                }
+            }
+        }
     }
 }
