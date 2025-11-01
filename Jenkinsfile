@@ -56,6 +56,8 @@ pipeline {
                 script {
                     def data = libraryResource("data/person.json")
                     echo(data)
+                    def image = libraryResource("image/example.PNG")
+                    echo(image)
                 }
             }
         }
