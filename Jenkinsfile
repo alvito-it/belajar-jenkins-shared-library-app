@@ -38,5 +38,17 @@ pipeline {
                 }
             }
         }
+
+        stage("Hello Person") {
+            steps {
+                script {
+                    echo(person([
+                        name: "Muhammad Alvito Madisyahputra",
+                        age: 22,
+                        country: "Indonesia"
+                    ])
+                }
+            }
+        }
     }
 }
