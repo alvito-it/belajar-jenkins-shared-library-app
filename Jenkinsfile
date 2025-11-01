@@ -30,5 +30,13 @@ pipeline {
                 }
             }
         }
+
+        stage("Parameter") {
+            steps {
+                script {
+                    sh(maven("clean compile"))
+                }
+            }
+        }
     }
 }
